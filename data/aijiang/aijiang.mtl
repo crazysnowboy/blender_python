@@ -1,0 +1,91 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v4.1.0)
+
+newmtl eye1
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd eye.png
+
+newmtl bottoms
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd bottoms.png
+
+newmtl hair1
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd hair1.png
+
+newmtl bottoms_2
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd bottoms.png
+
+newmtl tops
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tops.png
+
+newmtl hair2
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd hair2.png
+
+newmtl face
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd face.png
+
+newmtl face2
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd face.png
+
+newmtl face3
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd face.png
+
+newmtl face4
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd face.png
+
+newmtl eye2
+Kd 1 1 1
+Ka 0.5 0.5 0.5
+Ks 0 0 0
+d 1
+illum 1
+map_Kd eye.png
+
