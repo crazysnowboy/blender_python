@@ -61,7 +61,8 @@ class ShowInfo(bpy.types.Operator):
     bl_options = {"UNDO"}
     def invoke(self, context, event) :
         # show_info.show_info_1()
-        show_info.show_info_5()
+        # show_info.show_info_5()
+        show_info.ReplaceName()
 
         return {"FINISHED"}
 

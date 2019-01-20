@@ -94,6 +94,7 @@ class FileReadStream(FileStream):
         length = self.readInt()
         fmt = '<' + str(length) + 's'
         buf, = struct.unpack(fmt, self.__fin.read(length))
+        # print("crazy read string here")
         string_out = str(buf, self.header().encoding.charset)
         return string_out
 
