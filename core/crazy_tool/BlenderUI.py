@@ -7,7 +7,7 @@ from mathutils import Matrix
 reload(import_obj)
 reload(show_info)
 
-global_scale = 100.0
+global_scale = 1.0
 
 
 class LoadObj(bpy.types.Operator):
@@ -17,20 +17,22 @@ class LoadObj(bpy.types.Operator):
     bl_options = {"UNDO"}
 
     def Test(self,context):
-        # abs_path = os.path.abspath(__file__)
-        # file_dir = abs_path.replace(os.path.basename(abs_path), "")[:-1]
-        # path = os.path.join(file_dir,"../data/aijiang/aijiang.obj")
 
-        path = "/home/collin/Space_0_5_T/code/NeteaseProjects/3d_cartoon_face/data/basel_data/OBJ/basel_mesh.obj"
 
+        basel_model_path = "_mesh.obj"
 
 
         global_matrix = io_utils.axis_conversion(to_forward="Z",
                                                  to_up="-Y",
                                                  ).to_4x4() * Matrix.Scale(global_scale, 4)
 
-        import_obj.load(context, path, global_matrix=global_matrix)
+        import_obj.load(context, basel_model_path, global_matrix=global_matrix)
 
+
+
+
+        # basel_model_path = "mesh.obj"
+        # import_obj.load(context, basel_model_path)
 
     def invoke(self, context, event) :
 
@@ -61,8 +63,11 @@ class ShowInfo(bpy.types.Operator):
     bl_options = {"UNDO"}
     def invoke(self, context, event) :
         # show_info.show_info_1()
-        # show_info.show_info_5()
-        show_info.ReplaceName()
+        # show_info.show_info_4()
+        # show_info.ReplaceName()
+        # show_info.show_blendshape()
+        show_info.main()
+
 
         return {"FINISHED"}
 

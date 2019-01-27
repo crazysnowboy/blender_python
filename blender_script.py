@@ -1,13 +1,28 @@
-from importlib import reload
-from core import Manager
+from  argparse import ArgumentParser
 
-reload(Manager)
+def BlenderRun():
+    from core import Manager
+    from importlib import reload
+    reload(Manager)
 
-if __name__ == "__main__":
     Manager.register()
     # Manager.unregister()
 
+def LocalRun():
     print("good boy")
+
+
+
+
+if __name__ == "__main__":
+    parse = ArgumentParser()
+    parse.add_argument("-m", type=str,default="blender")
+    args = parse.parse_args()
+    if args.m=="blender":
+        BlenderRun()
+    else:
+        LocalRun()
+    print("--------running-------------")
 
 
 
